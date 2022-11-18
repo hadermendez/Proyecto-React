@@ -1,22 +1,20 @@
 import logo from './logo.svg';
+import imagenHome from "./img/rick-morty.png";
 import './App.css';
 
 function App() {
+
+const reqApi = async () => {
+
+  console.log("click");
+};
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <h1 className="title">Rick & Morty</h1>
+      <img src={imagenHome} alt="rick and morty" className="img-home"/>
+      <button onClick={reqApi} className="btn-search" >Buscar personajes</button>
       </header>
     </div>
   );
